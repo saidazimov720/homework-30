@@ -13,3 +13,8 @@ document.querySelectorAll('.square').forEach(square => {
       document.getElementById('error-sound').play();
     }
   }
+  setInterval(() => {
+    document.querySelectorAll('.square').forEach(square => {
+      square.style.backgroundColor = getRandomColor();
+    });
+  }, 1000);
