@@ -13,3 +13,8 @@
     cursor: none;
     position: relative;
   }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+  }
