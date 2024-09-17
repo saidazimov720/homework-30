@@ -27,3 +27,10 @@ document.querySelectorAll('.square').forEach(square => {
     }
     return color;
   }
+
+  const mouseTail = document.getElementById('mouse-tail');
+  
+document.addEventListener('mousemove', (e) => {
+  mouseTail.style.left = e.pageX + 'px';
+  mouseTail.style.top = e.pageY + 'px';
+});
